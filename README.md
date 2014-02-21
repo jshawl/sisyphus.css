@@ -6,13 +6,14 @@ CSS components I'm tired of writing.
 
 ### `.ps, .ps--a, .ps--b`
 
-    .ps{
-      position:relative;
-    }
+```css
+.ps{
+  position:relative;
+}
 
-    .ps:after,.ps:before{
-      content:'';
-      display:block;
-      position:absolute;
-    }
-
+.ps:after,.ps:before{
+  content:'';
+  display:block;
+  position:absolute;
+}
+```
