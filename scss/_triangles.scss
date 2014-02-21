@@ -1,0 +1,21 @@
+// Triangles
+//
+// .tr        - A standalone triangle
+// .tr--b     - A triangle in a :before pseudo element
+// .tr--a     - A triangle in a :after pseudo element
+
+@mixin tr{
+    height:0;
+    width:0;
+    border:0px 0px 0px 0px;
+}
+
+.tr{
+    @include tr;
+}
+
+.tr--b:before,
+.tr--a:after{
+    @include ps;
+    @include tr;
+}

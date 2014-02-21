@@ -1,0 +1,24 @@
+// Pseudo Elements Base
+//
+// .ps        - Default :before and :after setup
+// .ps--b     - :before pseudo element setup only
+// .ps--a     - :after pseudo element setup only
+
+@mixin ps{
+    content:'';
+    display:block;
+    position:absolute;
+}
+
+.ps,
+.ps--b,
+.ps--a{
+    position:relative;
+}
+
+.ps:before,
+.ps:after,
+.ps--b:before,
+.ps--a:after{
+      @include ps;
+}
