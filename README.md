@@ -2,18 +2,6 @@
 
 CSS components I'm tired of writing.
 
-## Pseudo Element Setup
+* [Pseudo Element Setup](scss/_pseudo-elements-base.scss)
 
-### `.ps, .ps--a, .ps--b`
 
-```css
-.ps{
-  position:relative;
-}
-
-.ps:after,.ps:before{
-  content:'';
-  display:block;
-  position:absolute;
-}
-```
