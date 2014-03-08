@@ -1,0 +1,21 @@
+/*
+  Clearin' Classes.
+*/
+
+.cb{
+    clear:both;
+}
+
+.cl{
+    clear:left;
+}
+
+.cr{
+    clear:right;
+}
+
+.cf:after{
+    content:' ';
+    display:table;
+    clear:both;
+}

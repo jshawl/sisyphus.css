@@ -1,21 +1,26 @@
-// Triangles
-//
-// .tr        - A standalone triangle
-// .tr--b     - A triangle in a :before pseudo element
-// .tr--a     - A triangle in a :after pseudo element
+/*
+      -----------------------------
+      |                           |
+      |  You know, that           |
+      |  little speech triangle.  |
+      |                           |
+      -----------------------------
+          \/
+*/
 
-@mixin tr{
+@mixin triangle{
+    @extend .ps;
     height:0;
     width:0;
-    border:0px 0px 0px 0px;
+    border-style:solid;
+    border-color:#000 #666 #ccc #fff
+    border-width:10px;
 }
 
-.tr{
-    @include tr;
+.triangle--after:after{
+    @include triangle;
 }
 
-.tr--b:before,
-.tr--a:after{
-    @include ps;
-    @include tr;
+.triangle--before:before{
+    @include triangle;
 }
