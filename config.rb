@@ -1,5 +1,5 @@
-debug = :true
-css_dir = "css"
+debug = :false
+css_dir = "."
 sass_dir = "scss"
 
 require 'autoprefixer-rails'
