@@ -15,14 +15,15 @@
     &:after{
 	@include ps;
     }
+  
+    /* Using a :before element only.  */
+    &--b:before{
+	@include ps;
+    }
+
+    /* Using an :after element only.  */
+    &--a:after{
+	@include ps;
+    }
 }
 
-/* Using a :before element only.  */
-.ps--b{
-    @include ps;
-}
-
-/* Using an :after element only.  */
-.ps--a{
-    @include ps;
-}
